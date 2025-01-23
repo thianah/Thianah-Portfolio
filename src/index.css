@@ -1,0 +1,155 @@
+.contact {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 20px;
+  background-color: rgb(29, 29, 49);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  color: #ddd;
+  margin-bottom: 200px;
+}
+/* Add this to your CSS file */
+.message {
+  max-height: 100px;
+  height: 50px;
+  margin: 50px;
+  width: 200px;
+}
+
+.home-title {
+  position: absolute;
+  margin-left: 50%;
+  padding-left: 100px;
+  margin-top: 40px;
+  color: rgb(29, 29, 49);
+}
+
+/*.home-container {
+  background-color: rgb(29, 29, 49);
+  margin-top: 20px;
+
+  display: flex;
+}*/
+
+.myimage {
+  max-width: 300px;
+  max-height: 100%;
+  padding-top: 50px;
+}
+
+.skill {
+  background-color: rgb(29, 29, 49);
+}
+.my {
+  color: #ddd;
+}
+.javascript {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.html {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.reactjs {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.vuejs {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.communication {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+.nodejs {
+  background-color: #ddd;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.me {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 50px;
+  background-color: rgb(29, 29, 49);
+  border: 1px solid #ceccda;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  color: #ddd;
+  margin-bottom: 200px;
+  height: 150px;
+}
+.ab {
+  color: rgb(29, 29, 49);
+}
+.homelink {
+  color: #ddd;
+  padding: 8px;
+  margin: 5px;
+  background-color: rgb(29, 29, 49);
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.todo {
+  background-color: rgb(29, 29, 49);
+  max-width: 400px;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.link {
+  color: rgb(127, 241, 123);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
