@@ -6,6 +6,7 @@ import Contact from "./pages/contact";
 import Skill from "./pages/skill";
 import Navbar from "./navbar";
 import Projects from "./pages/projects";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/skill" element={<Skill />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Footer />
     </>
   );
 }
