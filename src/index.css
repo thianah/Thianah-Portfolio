@@ -18,11 +18,18 @@
 }
 
 .home-title {
-  position: absolute;
-  margin-left: 50%;
-  padding-left: 100px;
-  margin-top: 40px;
-  color: rgb(29, 29, 49);
+  text-align: center;
+  padding: 20px;
+  background: rgb(177, 127, 127);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transform: scale(0);
+  opacity: 0;
+  animation: popup-animation 2s forwards;
+}
+.home-title.visible {
+  transform: scale(1);
+  opacity: 1;
 }
 
 /*.home-container {
@@ -35,7 +42,9 @@
 .myimage {
   max-width: 300px;
   max-height: 100%;
-  padding-top: 50px;
+  padding-top: 10px;
+  display: -moz-popup;
+  margin-top: 1px;
 }
 
 .skill {
@@ -130,7 +139,7 @@
 }
 
 .todo {
-  background-color: rgb(29, 29, 49);
+  background-color: rgb(24, 24, 43);
   max-width: 400px;
   color: white;
   padding: 10px;
@@ -147,7 +156,9 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 1%;
+  margin-top: 5px;
+
   text-align: center;
   position: fixed;
   bottom: 0;
@@ -155,14 +166,9 @@
   height: 20px;
 }
 @media (max-width: 600px) {
-  .home-title {
-    font-size: 20px;
-    max-width: 100%;
-    margin-bottom: 50px;
-  }
   .myimage {
-    width: 100%;
-    height: 150px;
+    width: 70%;
+    height: 100%;
   }
   .me {
     font-size: 15px;
