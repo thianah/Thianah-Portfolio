@@ -1,6 +1,5 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
-import About from "./pages/about";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Skill from "./pages/skill";
@@ -15,9 +14,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />}>
-          {/*use relative paths for nested routes */}
-        </Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/skill" element={<Skill />} />
         <Route path="/projects" element={<Projects />} />
@@ -26,4 +22,5 @@ function App() {
     </>
   );
 }
+
 export default App;

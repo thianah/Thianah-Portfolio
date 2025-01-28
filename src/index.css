@@ -22,9 +22,12 @@
   padding: 20px;
   background: rgb(177, 127, 127);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 60px;
   transform: scale(0);
   opacity: 0;
+  transition: all 0.5s ease-in-out;
+  max-width: 300px;
+  margin: 0 auto;
   animation: popup-animation 2s forwards;
 }
 .home-title.visible {
@@ -32,19 +35,14 @@
   opacity: 1;
 }
 
-/*.home-container {
-  background-color: rgb(29, 29, 49);
-  margin-top: 20px;
-
-  display: flex;
-}*/
-
 .myimage {
-  max-width: 300px;
-  max-height: 100%;
-  padding-top: 10px;
+  max-width: 200px;
+  max-height: 200%;
+  padding-top: 200px;
+
   display: -moz-popup;
   margin-top: 1px;
+  border-radius: 10px;
 }
 
 .skill {
@@ -53,57 +51,7 @@
 .my {
   color: #ddd;
 }
-.javascript {
-  background-color: #ddd;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  margin-bottom: 100px;
-}
-.html {
-  background-color: #ddd;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  margin-bottom: 100px;
-}
-.reactjs {
-  background-color: #ddd;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  margin-bottom: 100px;
-}
-.vuejs {
-  background-color: #ddd;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  margin-bottom: 100px;
-}
-.communication {
-  background-color: #ddd;
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  margin-bottom: 100px;
-}
-.nodejs {
+.myskills {
   background-color: #ddd;
   max-width: 500px;
   margin: 20px auto;
@@ -115,27 +63,17 @@
 }
 
 .me {
-  max-width: 500px;
+  max-width: 100px;
   margin: 70px auto;
   padding: 50px;
-  background-color: rgb(29, 29, 49);
   border: 1px solid #ceccda;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0.1);
   color: #ddd;
   margin-bottom: 200px;
-  height: 150px;
-}
-.ab {
-  color: rgb(29, 29, 49);
-}
-.homelink {
-  color: #ddd;
-  padding: 8px;
-  margin: 5px;
-  background-color: rgb(29, 29, 49);
-  border-radius: 30px;
-  text-decoration: none;
+  max-height: 200px;
+  max-width: 400px;
+  margin-bottom: 300px;
 }
 
 .todo {
@@ -179,4 +117,48 @@
     font-size: 20px;
     width: 100%;
   }
+}
+
+.navbar {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: black;
+  top: 50px;
+  left: 0;
+  max-width: 100px;
+  width: 100%;
+  max-height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 300px;
 }
