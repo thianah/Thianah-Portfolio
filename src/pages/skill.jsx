@@ -1,6 +1,7 @@
 function Skill() {
   return (
     <div className="skill">
+      <div id="skill"></div>
       <h1 className="my">My Skills</h1>
       <section className="myskills">
         <h2>JavaScript</h2>

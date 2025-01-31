@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -16,16 +15,16 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? "nav-links active" : "nav-links"}>
         <li>
-          <Link to="/home">Home</Link>
+          <a href="/">Home</a>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <a href="#testcontact">Contact</a>
         </li>
         <li>
-          <Link to="/skill">Skill</Link>
+          <a href="#skill">Skill</a>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
     </nav>

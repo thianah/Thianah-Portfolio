@@ -2,12 +2,22 @@
   max-width: 500px;
   margin: 70px auto;
   padding: 20px;
-  background-color: rgb(29, 29, 49);
-  border: 1px solid #ddd;
+  background-color: rgb(65, 30, 30);
+  border: 3px solid rgb(136, 173, 190);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0.1);
   color: #ddd;
   margin-bottom: 200px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(29, 29, 49);
+
+  color: #ddd;
 }
 /* Add this to your CSS file */
 .message {
@@ -16,18 +26,29 @@
   margin: 50px;
   width: 200px;
 }
-
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(29, 29, 49);
+  color: #ddd;
+}
 .home-title {
   text-align: center;
   padding: 20px;
-  background: rgb(177, 127, 127);
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-top: 50px;
+  background: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 60px;
   transform: scale(0);
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 200px;
   animation: popup-animation 2s forwards;
 }
 .home-title.visible {
@@ -35,49 +56,39 @@
   opacity: 1;
 }
 
-.myimage {
-  max-width: 200px;
-  max-height: 200%;
-  padding-top: 200px;
-
-  display: -moz-popup;
-  margin-top: 1px;
-  border-radius: 10px;
-}
-
 .skill {
   background-color: rgb(29, 29, 49);
-}
-.my {
   color: #ddd;
 }
 .myskills {
-  background-color: #ddd;
   max-width: 500px;
   margin: 20px auto;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 3px solid rgb(136, 173, 190);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0.1);
   margin-bottom: 100px;
+  background-color: rgb(65, 30, 30);
 }
 
 .me {
   max-width: 100px;
   margin: 70px auto;
   padding: 50px;
-  border: 1px solid #ceccda;
+  border: 3px solid rgb(136, 173, 190);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0.1);
-  color: #ddd;
+  color: #e4e1e1;
   margin-bottom: 200px;
-  max-height: 200px;
-  max-width: 400px;
-  margin-bottom: 300px;
+  max-height: 400px;
+  max-width: 500px;
+  margin-bottom: 200px;
+  margin-top: 50px;
+  background-color: rgb(65, 30, 30);
 }
 
 .todo {
-  background-color: rgb(24, 24, 43);
+  background-color: rgb(65, 30, 30);
   max-width: 400px;
   color: white;
   padding: 10px;
@@ -105,10 +116,6 @@
   height: 40px;
 }
 @media (max-width: 600px) {
-  .myimage {
-    width: 70%;
-    height: 100%;
-  }
   .me {
     font-size: 15px;
     height: 200px;
@@ -133,16 +140,16 @@
 }
 
 .nav-links {
-  list-style: none;
+  list-style: circle;
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   background-color: black;
   top: 50px;
   left: 0;
   max-width: 100px;
   width: 100%;
-  max-height: 300px;
+  max-height: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,4 +168,11 @@
   text-decoration: none;
   color: white;
   margin-right: 300px;
+}
+
+.projecttitle {
+  color: rgb(190, 158, 158);
+}
+.projects-container {
+  background: rgb(29, 29, 49);
 }

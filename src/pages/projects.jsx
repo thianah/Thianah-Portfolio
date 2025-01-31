@@ -20,7 +20,8 @@ function Projects() {
   const projects = projectsItem.map((item) => {
     return (
       <div className="todo" key={item.id}>
-        <h1>{item.title}</h1>
+        <div id="projects"></div>
+        <h2 className="projecttitle">{item.title}</h2>
         <p>{item.description}</p>
         <a className="link" href={item.url}>
           {" "}
@@ -30,7 +31,12 @@ function Projects() {
     );
   });
 
-  return <section>{projects}</section>;
+  return (
+    <section className="projects-container">
+      <h1 className="projecttitle">MY PROJECTS</h1>
+      {projects}
+    </section>
+  );
 }
 
 export default Projects;

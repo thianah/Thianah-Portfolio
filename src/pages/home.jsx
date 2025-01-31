@@ -19,8 +19,6 @@ function Home() {
         <br />
         YOU ARE WELCOME TO MY SPACE ON WEB 👋
       </h1>
-      <img className="myimage" src={image} alt="My Portfolio image"></img>
-
       <p className="me">
         Hi! I'm Ekundayo Christianah Adenike, a frontend developer with a
         passion for building scalable and efficient software systems. I'm
