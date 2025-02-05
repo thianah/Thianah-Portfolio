@@ -26,8 +26,9 @@ function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
+        "service_b4f5ic7",
         "template_2fwcykj",
-        "service_1jb5a0q",
+
         {
           name: name,
           email: email,
