@@ -24,14 +24,25 @@ function Contact() {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm("8hIrE3tjBes9gSKI3").then(
-      (result) => {
-        alert("Message sent successfully");
-      },
-      (error) => {
-        alert("Failed to send message. Please try again");
-      }
-    );
+    emailjs
+      .sendForm(
+        "template_2fwcykj",
+        "service_1jb5a0q",
+        {
+          name: name,
+          email: email,
+          message: message,
+        },
+        "8hIrE3tjBes9gSKI3"
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully");
+        },
+        (error) => {
+          alert("Failed to send message. Please try again");
+        }
+      );
   };
 
   const handleSubmit = (event) => {
