@@ -6,6 +6,7 @@ import {
   FaWhatsapp,
   FaInstagram,
 } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -20,6 +21,17 @@ function Contact() {
     } else if (name === "message") {
       setMessage(value);
     }
+  };
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm("8hIrE3tjBes9gSKI3").then(
+      (result) => {
+        alert("Message sent successfully");
+      },
+      (error) => {
+        alert("Failed to send message. Please try again");
+      }
+    );
   };
 
   const handleSubmit = (event) => {
