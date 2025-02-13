@@ -1,0 +1,24 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+    color: #ddd;
+  }
+
+  .contact {
+    max-width: 500px;
+    margin: 70px auto;
+    padding: 20px;
+    border: solid 3px #5FFBF1 ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+    color:white;
+    margin-bottom: 200px;
+  }
+  .get{
+    color:#D16BA5;
+  }
+  

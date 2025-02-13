@@ -1,0 +1,18 @@
+.projecttitle {
+  color:#e1f4fd;
+}
+
+.todo {
+  max-width: 400px;
+  color: rgb(250, 244, 244);
+  padding: 10px;
+  border:4px solid #5FFBF1 ;
+  border-radius: 10px;
+  box-shadow:  #5FFBF1; 
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.link {
+  color:    #5FFBF1;
+   
+}
