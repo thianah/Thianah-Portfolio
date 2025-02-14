@@ -23,7 +23,7 @@ function Projects() {
       title: "Portfolio",
       description:
         "This is a responsive portfolio website that showcases my projects, skills, and contact information. It is built with React, CSS, and EmailJS for the contact form.",
-        url: "https://vercel.com/ekundayos-projects/thianah-portfolio/8BErtZigqfpL9B6koJDxJk9vKTPz",
+        url: "https://thianah-portfolio.vercel.app/",
     },
   ];
 
