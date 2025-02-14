@@ -17,6 +17,14 @@ function Projects() {
         "The  Application Form is simple web application that allows users to fill out a form to apply Altschool. It desmonstrates the basic functionality of a form submission application.",
       url: " https://my-project-two-beryl.vercel.app/",
     },
+
+    {
+      id: "3",
+      title: "Portfolio",
+      description:
+        "This is a responsive portfolio website that showcases my projects, skills, and contact information. It is built with React, CSS, and EmailJS for the contact form.",
+        url: "https://vercel.com/ekundayos-projects/thianah-portfolio/8BErtZigqfpL9B6koJDxJk9vKTPz",
+    },
   ];
 
   const projects = projectsItem.map((item) => {

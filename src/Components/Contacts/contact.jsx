@@ -7,106 +7,89 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
-import './contact.css';
+import "./contact.css";
+
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    if (name === "name") {
-      setName(value);
-    } else if (name === "email") {
-      setEmail(value);
-    } else if (name === "message") {
-      setMessage(value);
-    }
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_b4f5ic7",
-        "template_2fwcykj",
 
-        {
-          name: name,
-          email: email,
-          message: message,
-        },
-        "8hIrE3tjBes9gSKI3"
+    emailjs
+      .send(
+        "service_b4f5ic7", // Replace with your actual service ID
+        "template_1uvyqhz", // Replace with your actual template ID
+        formData,
+        "8hIrE3tjBes9gSKI3" // Replace with your actual Public Key
       )
       .then(
-        (result) => {
-          alert("Message sent successfully");
+        () => {
+          alert("Message sent successfully!");
+          setFormData({ name: "", email: "", message: "" }); // Reset form fields
         },
         (error) => {
-          alert("Failed to send message. Please try again");
+          alert("Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
         }
       );
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Form submitted:", { name, email, message });
-  };
-
-  const socialMedia = () => {};
-
-  <br />;
   return (
     <section className="contact-container">
       <div className="contact">
-        <div id="testcontact"></div>
         <h2 className="get">Get in Touch</h2>
-        <p>
-          If you'd like to work together or just want to say hi, I'd love to
-          hear from you!
-        </p>
-        <br />
+        <p>If you'd like to work together or just want to say hi, I'd love to hear from you!</p>
 
-        <form className="name" onSubmit={handleSubmit}>
+        <form className="name" onSubmit={sendEmail}>
           <label>Name:</label>
           <input
             type="text"
             name="name"
-            value={name}
+            value={formData.name}
             onChange={handleChange}
             required
           />
           <br />
-          <br />
+
           <label>Email:</label>
           <input
             className="email"
             type="email"
             name="email"
-            value={email}
+            value={formData.email}
             onChange={handleChange}
             required
           />
           <br />
 
           <label>Leave a Message:</label>
-          <input
+          <textarea
             className="message"
-            type="message"
             name="message"
-            value={message}
+            value={formData.message}
             onChange={handleChange}
             required
           />
           <br />
+
           <button type="submit">Submit</button>
         </form>
 
         <div>
           <h3>Or, you can reach me at:</h3>
           <a
-            href="https://wa.me//+2349161402448"
+            href="https://wa.me/+2349161402448"
             target="_blank"
-            rel="noonpener noreferrer"
+            rel="noopener noreferrer"
           >
             <FaWhatsapp size={30} color="#25D366" />
           </a>
