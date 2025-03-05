@@ -18,6 +18,8 @@ function Projects() {
       url: " https://my-project-two-beryl.vercel.app/",
     },
 
+    
+
     {
       id: "3",
       title: "Portfolio",
@@ -25,6 +27,14 @@ function Projects() {
         "This is a responsive portfolio website that showcases my projects, skills, and contact information. It is built with React, CSS, and EmailJS for the contact form.",
         url: "https://thianah-portfolio.vercel.app/",
     },
+
+    {
+      id: "4",
+      title: "Quote app",
+      description:
+        "The Quote App is a simple web application that displays random quotes from an API. It features a clean, responsive design and a button that allows users to generate new quotes.",
+ url: "https://t-quote.vercel.app/",
+      }
   ];
 
   const projects = projectsItem.map((item) => {
@@ -41,7 +51,7 @@ function Projects() {
     );
   });
 
-  return (
+  return ( 
     <section className="projects-container">
       <h1 className="projecttitle">MY PROJECTS</h1>
       {projects}
