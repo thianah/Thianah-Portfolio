@@ -9,10 +9,10 @@ function Projects() {
     },
     {
       id: "2",
-      title: "Application form",
-      description:
-        "The Application Form is a simple web application that allows users to fill out a form to apply to Altschool. It demonstrates the basic functionality of a form submission application.",
-      url: "https://my-project-two-beryl.vercel.app/",
+      title: "Weather App",
+      description: "Tee Cast is a sleek and user-friendly weather app that allows you to search for any location and get real-time weather updates. With accurate forecasts, temperature details, and weather conditions. 🌤️🌍",
+        
+      url: "https://tee-cast.vercel.app/",
     },
     {
       id: "3",
@@ -30,15 +30,28 @@ function Projects() {
     },
   ];
 
-  const projects = projectsItem.map((item) => {
+  const projectsItem2 = [
+    {
+      id: "1",
+      title: "Open source",
+      description:
+        "Contributed to various open-source projects, enhancing functionality and fixing bugs. Collaborated with developers worldwide to improve code quality and user experience.",
+          url: "https://github.com/ianshulx/React-projects-for-beginners/pull/176",
+    },
+  ]
+  const allProjects = [...projectsItem, ...projectsItem2];
+const projects = allProjects.map((item) => {
+    
+
     return (
-      <div className="project-item bg-white shadow-md rounded-lg p-6 mb-6" key={item.id}>
+      <div className="project-item bg-white shadow-md duration-500  transition-transform duration-300 ease-in-out hover:scale-105 rounded-lg p-6 mb-6" key={item.id}>
         <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
         <p className="text-gray-700 mb-4">{item.description}</p>
         <a className="text-blue-500 hover:underline" href={item.url} target="_blank" rel="noopener noreferrer">
           {item.url}
         </a>
       </div>
+
     );
   });
 
