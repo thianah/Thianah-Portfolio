@@ -36,7 +36,8 @@ function Projects() {
       title: "Open source",
       description:
         "Contributed to various open-source projects, enhancing functionality and fixing bugs. Collaborated with developers worldwide to improve code quality and user experience.",
-          url: "https://github.com/ianshulx/React-projects-for-beginners/pull/176",
+          url: "https://github.com/ianshulx/React-projects-for-beginners/pull/176, https://github.com/ianshulx/React-projects-for-beginners/pull/178",
+
     },
   ]
   const allProjects = [...projectsItem, ...projectsItem2];
