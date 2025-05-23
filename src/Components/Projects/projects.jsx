@@ -2,6 +2,14 @@ function Projects() {
   const projectsItem = [
     {
       id: "1",
+      title: "E-commerce website",
+      description:
+        "This is a responsive e-commerce website that allows users to browse and purchase products. It is built with React, javaacript,  tailwindCSS.",
+      url: "https://tstore2.netlify.app/",
+    },
+    
+    {
+      id: "1",
       title: "React To-Do App",
       description:
         "The To-Do Application is a responsive React project that facilitates CRUD operations, pagination, search functionality, and comprehensive error handling. It seamlessly fetches data from JSONPlaceholder API, leverages React Router and Hooks, and features a clean, responsive CSS design. Deployed on Vercel, it offers an efficient and user-friendly solution for task management.",
