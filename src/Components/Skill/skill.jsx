@@ -1,17 +1,15 @@
 const ServicesGrid = () => {
   const services = [
     "REACT",
-    "NODEJS",
     "CSS",
     "HTML",
     "JAVASCRIPT",
-    "TYPESCRIPT",
     "VUEJS",
   ];
 
   return (
-    <div className="of min-h-screen font-serif bg-white font-bold text-3xl md:text-5xl flex flex-col items-center justify-center px-4 md:px-6 rounded-xl transition-transform duration-300 ">
-      <h1 className="text-4xl font-bold mt-40 mb-10 text-center">MY SKILLS</h1>
+    <div className="of min-h-screen mb-10 font-serif font-bold text-3xl md:text-5xl flex flex-col items-center justify-center px-4 md:px-6 rounded-xl transition-transform duration-300 ">
+      <h1 className="text-4xl text-white font-bold mt-40 mb-10 text-center">MY SKILLS</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
         {services.map((service, index) => (
           <div

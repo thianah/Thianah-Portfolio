@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 body {
-background-color: rgb(239, 239, 239);
+background-color: black;
   
 }
 
 .me{
-    background-image: linear-gradient(to right top, #da2a82, #c61c9b, #b3a4b6, #e3e2e4, #f5f5f8, #eae6f0, #efe4f4, #744678, #b4577c, #e57470, #fea160, #fbd75f);
+    background-image: linear-gradient(to right top, #da2a82, #c61c9b, #858186, #2c0356, #41111a, #34510d, #073947, #744678, #b4577c, #e57470, #fea160, #fbd75f);
 }
 

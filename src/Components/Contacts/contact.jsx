@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact-container mt-20 mb-30 bg-white text-black px-6">
+    <section className="contact-container mt-20 rounded-lg mb-30 bg-white text-black px-6">
       <div className="contact max-w-2xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-8">LEAVE A MESSAGE</h2>
 
