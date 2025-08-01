@@ -28,7 +28,7 @@ function Home() {
         Hi! I'm Ekundayo Christianah Adenike, a frontend developer with a
         passion for building scalable and efficient software systems. I'm
         currently a student at Altschool Africa. I have a well-versed skill set
-        in HTML, CSS, JavaScript, React, Node.js, Vue.js, designing and
+        in HTML, CSS, JavaScript, React, Vue.js, designing and
         developing user interfaces, and collaborating with cross-functional
         teams to deliver high-quality products. I am eager to learn and grow as
         a developer, and I'm excited to leverage my skills to make a positive
